@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <title>Gestão de Verbas</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="material-symbols-outlined">menu</span>
+      </nav>
+      <img
+        src="./img/pharmaviews_consultoria_e_servicos_ltda_cover.jpg"
+        alt="Logo"
+      />
+    </header>
+    <main>
+      <h1 align="home">Gestão de Verbas</h1>
+      <br />
+
+      <form class="add-form">
+        <input type="text" placeholder="Selecione o tipo de ação..." class="input-task" />
+        <input type="text" placeholder="Data prevista" class="input-task" />
+        <input
+          type="text"
+          placeholder="Investimento previsto"
+          class="input-task"
+        />
+        <button class="btn-action">
+          <span class="material-symbols-outlined">backspace</span>Limpar
+        </button>
+        <button type="submit">
+          <span class="material-symbols-outlined">add</span>Adicionar
+        </button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ação</th>
+            <th>Data prevista</th>
+            <th>Investimento previsto</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body" style="display: none;">
+          <!-- <tr>
+            <td>palestra</td>
+            <td>17/07/2024</td>
+            <td>R$ 100,00</td>
+            <td>
+              <button class="btn-action">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+            </td>
+            <td>
+              <button class="btn-action">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
